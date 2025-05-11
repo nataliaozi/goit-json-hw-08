@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie domowe</title>
+  </head>
+  <body>
+    <h1>Moduł 8 Zadanie Domowe: JSON i JavaScript</h1>
+    <h2>1. Analiza pliku JSON</h2>
+    <p>Oto dane z pliku user.json:</p>
+    <pre>
+        {
+  "name": "Josh",
+  "weight": 175,
+  "age": 30,
+  "eyecolor": "brown",
+  "isHappy": true,
+  "cars": ["Chevy", "Honda"],
+  "favouriteBook": {
+    "title": "The Last Kingdom",
+    "author": "Bernard Cornwell",
+    "rating": 8.38
+  }
+}
+    </pre>
+    <br />
+    <h3>Pary klucz - wartość, oraz określenie typu danych</h3>
+    <ul>
+      <li>(klucz)name - (wartość)Josh , jest to <b>string (ciąg znaków)</b></li>
+      <li>(klucz)weight - (wartość)175, jest to <b>number (liczba)</b></li>
+      <li>(klucz)age - (wartość) 30, jest to <b>number (liczba)</b></li>
+      <li>
+        (klucz)eyecolor - (wartość)brown, jest to <b>string (ciąg znaków)</b>
+      </li>
+      <li>
+        (klucz) isHappy - (wartość)true, jest to
+        <b>boolean (wartość logiczna)</b>
+      </li>
+      <li>
+        (klucz)cars - (wartość)
+        <pre>["Chevy", "Honda"]</pre>
+        , jest to <b>table (tablica z tekstami)</b>
+      </li>
+      <li>
+        (klucz) favouriteBook - (wartość)
+        <pre>
+{
+    "title": "The Last Kingdom",
+    "author": "Bernard Cornwell",
+    "rating": 8.38
+  }</pre
+        >
+        , jest to <b>object (obiekt)</b>
+      </li>
+    </ul>
+    <br />
+    <h3>Wyjaśnienie struktury JSON</h3>
+    <p>
+        <ul>
+      <li><b>JSON</b> jest formatem, który służy do zapisywania danych w formie par <b>klucz</b> -
+     <b> wartość</b>. </li>
+      <li>Wartości mogą być różnych typów, takich jak: <b>tekst(string)</b>, <b>liczba (number)</b>, <b>wartość logiczna (boolean)</b>, <b>tablica (table)</b>, czy też <b>obiekt (object)</b>. </li>
+       <li> <u>Klucze</u> w JSON są zawsze ciągami w <u>podwójnych cudzysłowach</u>.</li>
+   </ul> </p>
+   <h2> 2. Analiza metody JSON.parse() -> script1.js <a href="script1.js" target="_blank"> Zobacz kod script1.js</a></h2>
+   <h2> 3. Obsługa błedów -> script2.js <a href="script2.js" target="_blank">Zobacz kod script2.js</a></h2>
+   <br>
+   <h3>Wnioski i refleksje po wykonaniu zadań</h3>
+   <ul>
+    <li>Nauczyłam się, jak wygląda składnia JSON oraz jakie typy danych można w nim zapisywać</li>
+    <li>Zrozumiałam, jak konwertować dane JSON na obiekt JavaScript przy użyciu metody JSON.parse() </li>
+    <li>Poznałam zastosowanie metody try...catch do bezpiecznego obsługiwania błędów podczas parsowania błędów</li>
+    <li>Początkowo trudność sprawiło mi zrozumienie różnic między JS a JSON-em (szczególnie cudzysłowy), ale po ćwiczeniach i drukowaniu w konsoli wszystko powoli się rozjaśniało</li>
+   </ul>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+
+  </body>
+</html>
+
