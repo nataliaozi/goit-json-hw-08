@@ -7,8 +7,8 @@ try {
   console.log('Parsowanie zakończone sukcesem:', obiekt);
 } catch (error) {
   console.log('Wystąpił błąd podczas parsowania JSON:');
-  console.log('Rodzaj błedu:', error.name);
-  console.log('Wiadomość błędu:', error.message);
+  console.error('Rodzaj błedu:', error.name);
+  console.error('Wiadomość błędu:', error.message);
 }
 
 console.log(
