@@ -10,3 +10,7 @@ try {
   console.log('Rodzaj błedu:', error.name);
   console.log('Wiadomość błędu:', error.message);
 }
+
+console.log(
+  'Pomimo ze wystapil blad, kod dalej dziala, nie powoduje to jego zatrzymania'
+); // polecenie z zadania domowego: Upewnij się , że skrypt działa poprawnie anwet w przypadku wystapienia bledu
